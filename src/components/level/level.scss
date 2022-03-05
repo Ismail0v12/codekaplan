@@ -1,0 +1,30 @@
+.level {
+  span {
+    border-radius: 60px;
+    background-color: #E1E1E1;
+    width: 6px;
+    display: inline-block;
+    margin-right: 4px;
+    align-self: flex-end;
+
+    &.active {
+      background-color: var(--blue);
+    }
+
+    &:nth-child(1) {
+      height: 10px;
+    }
+
+    &:nth-child(2) {
+      height: 19px;
+    }
+
+    &:nth-child(3) {
+      height: 27px;
+    }
+
+    &:nth-child(4) {
+      height: 35px;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.footer {
+  padding: 116px 0 36px 0;
+  background-color: var(--black);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 358px 180px 180px 230px;
+    gap: 100px;
+  }
+
+  &__about {
+    p {
+      font-size: 16px;
+      line-height: 32px;
+      margin-bottom: 24px;
+      margin-top: 44px;
+      color: white;
+    }
+
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 32px;
+      color: #FFFFFF;
+      text-decoration: none;
+
+      svg {
+        animation: svgAnimate 1s alternate infinite;
+        @keyframes svgAnimate {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(7px);
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    a {
+      width: 44px;
+      height: 44px;
+      background-color: #fff;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .3s ease;
+
+      &:hover {
+        background-color: var(--blue);
+      }
+
+      &:hover svg {
+        fill: white;
+      }
+      &:hover svg path{
+        stroke: white;
+      }
+      &:hover svg g {
+        stroke: white;
+
+      }
+    }
+  }
+
+  &__nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    &-title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      color: #FFFFFF;
+    }
+    li {
+      margin-bottom: 25px;
+      &:first-child {
+        margin-bottom: 25px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+      }
+    }
+
+
+  }
+
+  &__support {
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      color: #FFFFFF;
+      margin-bottom: 60px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 29px;
+
+        a {
+          font-size: 16px;
+          line-height: 18px;
+          color: #FFFFFF;
+          text-decoration: none;
+          display: inline-flex;
+
+          span {
+            width: 215px;
+          }
+
+          svg {
+            margin-right: 17px;
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    background-color: rgba(228, 228, 228, 0.15);
+    margin-top: 53px;
+    margin-bottom: 0;
+  }
+
+  &__copyright {
+    margin-top: 39px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}

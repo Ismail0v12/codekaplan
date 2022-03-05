@@ -1,0 +1,36 @@
+.breadcumb {
+  min-height: 304px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & > div {
+    min-height: 304px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      color: #FFFFFF;
+      margin-bottom: 0;
+    }
+
+    div {
+      margin-top: 18px;
+
+      a {
+        font-size: 14px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-decoration: none;
+        letter-spacing: 6px;
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.blog {
+  &__wrapper {
+    padding-top: 65px;
+    padding-bottom: 100px;
+
+    & > h4 {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 0;
+    }
+
+    & > h5 {
+      font-size: 16px;
+      margin-bottom: 0;
+      margin-top: 26px;
+      line-height: 20px;
+      letter-spacing: -0.625263px;
+      color: #696871;
+    }
+  }
+  &__pagination {
+    margin-top: 81px;
+  }
+}

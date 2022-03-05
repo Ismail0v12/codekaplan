@@ -1,0 +1,96 @@
+//BUTTON
+.button-filled, .button {
+  border: 1px solid transparent;
+  background-color: var(--blue);
+  border-radius: 10px;
+  outline: none;
+  text-decoration: none;
+  padding: 15px 22px 18px 21px;
+  width: 100%;
+  color: white;
+  transition: all .3s ease;
+  white-space: nowrap;
+}
+
+.button {
+  border: 1px solid var(--blue);
+  background-color: white;
+  color: var(--blue);
+}
+
+.button:hover {
+  border: 1px solid transparent;
+  background-color: var(--blue);
+  color: white;
+}
+
+.button-filled:hover {
+  border: 1px solid var(--blue);
+  background-color: white;
+  color: var(--blue);
+}
+
+.button-filled:hover svg {
+  fill: var(--blue);
+}
+
+.button:hover svg {
+  fill: white;
+}
+
+.button-up {
+  position: fixed;
+  width: 57px;
+  height: 57px;
+  text-align: center;
+  bottom: 90px;
+  right: 90px;
+  padding: 17px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+
+  svg {
+    line-height: 0;
+  }
+
+  &:hover svg {
+    fill: white;
+    stroke: var(--blue);
+  }
+}
+
+//INPUT
+
+.input-custom {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 14px 21px;
+  color: var(--light-black);
+  font-size: 16px;
+  line-height: 32px;
+}
+
+// TITLE
+.title {
+  font-weight: bold;
+  color: var(--black);
+  margin-bottom: 0;
+}
+
+//SWIPER CUSTOM PAGINATION
+.swiper__pagination {
+  span {
+    width: 18px;
+    height: 6px;
+    background-color: var(--light-black);
+    border-radius: var(--borderRadius10);
+    transition: all .3s ease;
+    &.swiper-pagination-bullet-active {
+      background-color: var(--blue);
+    }
+  }
+}

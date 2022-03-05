@@ -1,0 +1,37 @@
+.courses {
+  &__wrapper {
+    padding-top: 65px;
+    padding-bottom: 72px;
+
+    h5 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.625263px;
+      color: #696871;
+      margin-top: 34px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 0;
+  }
+
+
+  &__content {
+    margin-top: 53px;
+  }
+
+  &__button {
+    width: 160px;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 95px auto 0 auto;
+    display: block;
+  }
+
+}
