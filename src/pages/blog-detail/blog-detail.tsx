@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Breadcumb from "../../components/breadcumb/breadcumb";
 import imacImage from '../../assets/images/imac.png';
 import './blog-detail.scss';
@@ -6,8 +6,16 @@ import authorImage from '../../assets/images/author.png';
 import mackbookImage from '../../assets/images/mackbook.png';
 
 function BlogDetail() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <section className="blog-detail">
+    <section
+      data-aos="fade-up"
+      data-aos-delay="400"
+      data-aos-duration="1000"
+      className="blog-detail"
+    >
       <Breadcumb title="Blog" link="/blog"/>
       <div className="container">
         <div className="blog-detail__wrapper">

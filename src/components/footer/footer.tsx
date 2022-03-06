@@ -13,16 +13,29 @@ import TiktokIcon from "../../assets/icons/tiktok-icon";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-delay="400"
+      className="footer"
+    >
       <div className="container">
         <div className="footer__wrapper">
           <div>
-            <div className="footer__logo">
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              className="footer__logo">
               <Link to="/">
                 <FooterLogo/>
               </Link>
             </div>
-            <div className="footer__about">
+            <div
+              data-aos="flip-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              className="footer__about">
               <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its layout.
@@ -30,35 +43,75 @@ function Footer() {
               <Link to="/">Read more <ArrowRightShort/></Link>
             </div>
             <div className="footer__social">
-              <a href="https://facebook.com">
+              <a
+                data-aos="flip-left"
+                data-aos-duration="1100"
+                data-aos-delay="500"
+                href="https://facebook.com"
+              >
                 <FacebookIcon/>
               </a>
-              <a href="https://facebook.com">
+              <a
+                data-aos="flip-left"
+                data-aos-duration="1200"
+                data-aos-delay="550"
+                href="https://facebook.com"
+              >
                 <TwitterIcon/>
               </a>
-              <a href="https://facebook.com">
+              <a
+                data-aos="flip-left"
+                data-aos-duration="1300"
+                data-aos-delay="600"
+                href="https://facebook.com"
+              >
                 <InstagramIcon/>
               </a>
-              <a href="https://facebook.com">
+              <a
+                data-aos="flip-left"
+                data-aos-duration="1400"
+                data-aos-delay="650"
+                href="https://facebook.com"
+              >
                 <TiktokIcon/>
               </a>
             </div>
           </div>
           <ul className="footer__nav">
             <li className="footer__nav-title">Company</li>
-            <li><Link to="/">About Us</Link></li>
-            <li><Link to="/">Courses</Link></li>
-            <li><Link to="/">Style Guide</Link></li>
-            <li><Link to="/">Blog</Link></li>
-            <li><Link to="/">Contact</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="400"><Link to="/">About Us</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="450"><Link to="/">Courses</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="500"><Link to="/">Style Guide</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="550"><Link to="/">Blog</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="600"><Link to="/">Contact</Link></li>
           </ul>
           <ul className="footer__nav">
             <li className="footer__nav-title">Company</li>
-            <li><Link to="/">About Us</Link></li>
-            <li><Link to="/">Courses</Link></li>
-            <li><Link to="/">Style Guide</Link></li>
-            <li><Link to="/">Blog</Link></li>
-            <li><Link to="/">Contact</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="400"><Link to="/">About Us</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="450"><Link to="/">Courses</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="500"><Link to="/">Style Guide</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="550"><Link to="/">Blog</Link></li>
+            <li data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="600"><Link to="/">Contact</Link></li>
           </ul>
           <div className="footer__support">
             <h4>Contact Us</h4>

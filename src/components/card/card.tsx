@@ -7,7 +7,10 @@ import Level from "../level/level";
 function Card() {
 
   return (
-    <Link to="/courses/1" className="card">
+    <Link to="/courses/1" className="card"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="300">
       <div className="card__img">
         <img src={image} alt="Card title"/>
       </div>

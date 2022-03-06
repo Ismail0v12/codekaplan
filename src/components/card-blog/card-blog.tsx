@@ -6,7 +6,12 @@ import './card-blog.scss';
 
 function CardBlog() {
   return (
-    <div className="card-blog">
+    <div
+      className="card-blog"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    >
       <div className="card-blog__img">
         <img src={image} alt="card-blog"/>
       </div>

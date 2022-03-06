@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './contact.scss';
 import Breadcumb from "../../components/breadcumb/breadcumb";
 import MapPinIcon from "../../assets/icons/map-pin-icon";
@@ -12,8 +12,16 @@ import FacebookFilledIcon from "../../assets/icons/facebook-filled-icon";
 import ContactForm from "./contact-form";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <section className="contact">
+    <section
+      data-aos="fade-up"
+      data-aos-delay="400"
+      data-aos-duration="1000"
+      className="contact"
+    >
       <Breadcumb title="Contact" link="/contact"/>
       <div className="container">
         <div className="contact__wrapper">
@@ -22,8 +30,8 @@ function Contact() {
             <h4>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</h4>
           </div>
           <div className="contact__info">
-            <div className="row">
-              <div className="col-md-4 ">
+            <div className="row gy-4">
+              <div className="col-lg-4 col-md-6 col-12">
                 <div className="contact__info-card">
                   <div className="contact__info-icon">
                     <MapPinIcon/>
@@ -32,24 +40,24 @@ function Contact() {
                   <div className="contact__info-address">212, Johnson Street Melborne, Australia</div>
                 </div>
               </div>
-              <div className="col-md-4 ">
+              <div className="col-lg-4 col-md-6 col-12">
                 <div className="contact__info-card">
                   <div className="contact__info-icon">
                     <MailIcon/>
                   </div>
-                  <div className="contact__info-title title">Address</div>
+                  <div className="contact__info-title title">Email</div>
                   <div className="contact__info-address">
                     <a href="mailto: info@xodekaplan.com">info@xodekaplan.com</a>
                     <a href="mailto:codekaplan@gmail.com">codekaplan@gmail.com</a>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 ">
+              <div className="col-lg-4 col-md-12 col-12">
                 <div className="contact__info-card">
                   <div className="contact__info-icon">
                     <PhoneCallIcon/>
                   </div>
-                  <div className="contact__info-title title">Address</div>
+                  <div className="contact__info-title title">Phone</div>
                   <div className="contact__info-address">
                     <a href="tel:+1 457 856 44 55">+1 457 856 44 55</a>
                     <a href="tel:+1 457 895 55 66">+1 457 895 55 66</a>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './login.scss';
 import UserIcon from "../../assets/icons/user-icon";
 import LockIcon from "../../assets/icons/lock-icon";
@@ -8,6 +8,9 @@ import {Link} from "react-router-dom";
 
 function Login() {
   const [changeType, setChangeType] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="login">
       <h4 className="auth-layout__subtitle">Welcome</h4>

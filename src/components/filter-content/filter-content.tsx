@@ -26,7 +26,11 @@ function CoursesFilter({filter, setFilter}: CoursesFilterProps) {
   });
 
   return (
-    <div className="filter__content">
+    <div
+      className="filter__content"
+      data-aos="zoom-in-right"
+      data-aos-delay="400"
+      data-aos-duration="1000">
       {buttons}
     </div>
   );

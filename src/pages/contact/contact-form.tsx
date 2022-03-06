@@ -4,7 +4,7 @@ function ContactForm() {
   return (
     <form className="contact__form">
       <h5 className="title">Get in touch</h5>
-      <div className="row gy-5 mt-5">
+      <div className="row gy-5 mt-lg-5 mt-md-3 mt-0">
         <div className="col-md-4 contact__form-input">
           <input type="text" name="name" id="name" required/>
           <label htmlFor="name">Your name <i>*</i></label>

@@ -61,9 +61,11 @@
       &:hover svg {
         fill: white;
       }
-      &:hover svg path{
+
+      &:hover svg path {
         stroke: white;
       }
+
       &:hover svg g {
         stroke: white;
 
@@ -75,17 +77,25 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
     &-title {
       font-weight: 600;
       font-size: 20px;
       line-height: 32px;
       color: #FFFFFF;
     }
+
     li {
       margin-bottom: 25px;
+
       &:first-child {
         margin-bottom: 25px;
       }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
       a {
         text-decoration: none;
         font-size: 16px;
@@ -147,5 +157,40 @@
     line-height: 32px;
     color: #FFFFFF;
     text-align: center;
+  }
+
+  @media (max-width: 1400px) {
+    &__wrapper {
+      gap: 56px;
+    }
+  }
+  @media (max-width: 1200px) {
+    &__wrapper {
+      grid-template-columns: 279px 150px 150px 230px;
+      gap: 42px;
+    }
+  }
+  @media (max-width: 992px) {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+  }
+  @media (max-width: 576px) {
+    & {
+      padding: 60px 0 36px 0;
+    }
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+    &__support {
+      h4 {
+        margin-bottom: 30px;
+      }
+    }
+    &__social {
+      margin-top: 30px;
+    }
   }
 }

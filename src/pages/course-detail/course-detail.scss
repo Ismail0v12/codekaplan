@@ -14,10 +14,13 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
     position: sticky;
     top: 10px;
+    z-index: 9;
+
     &-img {
       height: 274px;
       width: 100%;
       position: relative;
+      border-radius: 20px;
 
       span {
         @include playIcon;
@@ -26,6 +29,8 @@
       img {
         width: 100%;
         height: 100%;
+        border-radius: 20px;
+
       }
     }
 
@@ -105,6 +110,7 @@
           color: var(--black);
           margin-bottom: 10px;
         }
+
         span {
           font-size: 16px;
           line-height: 20px;
@@ -115,11 +121,13 @@
       }
     }
   }
+
   &__tabs {
     display: flex;
     align-items: center;
     gap: 30px;
     margin-top: 71px;
+
     h5 {
       font-weight: 500;
       font-size: 20px;
@@ -128,6 +136,7 @@
       color: #69697B;
       padding: 20px 30px;
       text-align: center;
+
       &.active {
         color: var(--blue);
         font-weight: bold;
@@ -137,23 +146,30 @@
 
   &__description {
     margin-top: 36px;
+
     h4 {
       font-size: 36px;
       line-height: 44px;
       margin-bottom: 21px;
     }
+
     article {
       font-size: 16px;
       line-height: 32px;
       letter-spacing: -0.625263px;
       color: #696871;
     }
+
     img {
+      width: 100%;
       margin-top: 25px;
       margin-bottom: 39px;
+      border-radius: 10px;
     }
+
     ul {
       margin-top: 31px;
+
       li {
         font-size: 16px;
         line-height: 32px;
@@ -161,10 +177,90 @@
         color: #696871;
       }
     }
+
     h5 {
       font-size: 24px;
       line-height: 29px;
 
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__card {
+      &-img {
+        height: 200px;
+      }
+    }
+    &__tabs {
+      gap: unset;
+      justify-content: space-between;
+
+      h5 {
+        padding: 16px 0;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .mobile__order {
+      order: -1;
+    }
+    &__card {
+      z-index: unset;
+
+      &-img {
+        height: 300px;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    &__card {
+      z-index: unset;
+
+      &-img {
+        height: 200px;
+      }
+    }
+    &__header {
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-top: 15px;
+      }
+    }
+    &__tabs {
+      margin-top: 40px;
+
+      h5 {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+    }
+    &__description {
+      h4 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      article {
+        font-size: 12px;
+        line-height: 28px;
+        letter-spacing: .6px;
+      }
+      h5 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      ul {
+        margin-top: 15px;
+        li {
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
     }
   }
 }

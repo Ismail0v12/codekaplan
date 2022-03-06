@@ -10,6 +10,14 @@
   color: white;
   transition: all .3s ease;
   white-space: nowrap;
+  @media (max-width: 768px) {
+    & {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+    }
+  }
 }
 
 .button {
@@ -43,13 +51,16 @@
   width: 57px;
   height: 57px;
   text-align: center;
-  bottom: 90px;
-  right: 90px;
-  padding: 17px;
+
+  bottom: 40px;
+  right: 30px;
+
   border-radius: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 999;
+  padding: 0;
 
   svg {
     line-height: 0;
@@ -58,6 +69,15 @@
   &:hover svg {
     fill: white;
     stroke: var(--blue);
+  }
+
+  @media (max-width: 576px) {
+    & {
+      width: 40px;
+      height: 40px;
+      bottom: 45px;
+      right: 20px;
+    }
   }
 }
 
@@ -89,8 +109,18 @@
     background-color: var(--light-black);
     border-radius: var(--borderRadius10);
     transition: all .3s ease;
+
     &.swiper-pagination-bullet-active {
       background-color: var(--blue);
+    }
+  }
+
+  @media (max-width: 576px) {
+    & {
+      span {
+        width: 13px;
+        height: 5px;
+      }
     }
   }
 }

@@ -3,7 +3,12 @@ import PractiseAccordion from "./practise-accordion";
 
 function PractiseFilter() {
   return (
-    <div className="practise__filter">
+    <div
+    data-aos="fade-right"
+    data-aos-delay="400"
+    data-aos-duration="1000"
+      className="practise__filter"
+    >
       <PractiseAccordion title="Frontend"/>
       <PractiseAccordion title="Backend"/>
       <PractiseAccordion title="DataBase"/>

@@ -4,12 +4,20 @@ import computer from '../../assets/images/computer.png';
 
 function HomeAnnouncement() {
   return (
-    <div className="home__announcement">
+    <div
+      className="home__announcement"
+      data-aos="fade-up"
+      data-aos-duration="1000">
       <div className="container">
         <div className="home__announcement-top">
-          <img src={perspectiveImage} alt="codekaplan"/>
+          <img
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            src={perspectiveImage} alt="codekaplan"/>
         </div>
-        <h3>Apply until December 31, 2021 and get one <br/> of our benefits!</h3>
+        <h3
+          data-aos-duration="1000"
+          data-aos="zoom-in">Apply until December 31, 2021 and get one <br/> of our benefits!</h3>
         <div className="home__announcement-bottom">
           <div>
             <img src={computer} alt="codekaplan"/>

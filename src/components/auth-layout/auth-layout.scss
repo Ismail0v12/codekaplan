@@ -23,8 +23,10 @@
 
   &__outlet {
     padding-top: 60px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
+    gap: 40px;
   }
 
   &__component {
@@ -166,13 +168,35 @@
   &__question {
     margin-top: 75px;
     text-align: center;
+
     a {
       font-size: 14px;
       line-height: 17px;
       color: var(--black);
       text-decoration: none;
+
       span {
         color: var(--blue);
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    & {
+      grid-template-columns: 1fr;
+
+      &__image {
+        display: none;
+      }
+
+      &__component {
+        width: 300px;
+      }
+      &__outlet {
+        padding-top: 30px;
+      }
+      &__back {
+        padding-left: 10px;
       }
     }
   }

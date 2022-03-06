@@ -59,6 +59,8 @@
 
       .level {
         span {
+          width: 4px;
+
           &:nth-child(1) {
             height: 8px;
           }
@@ -99,6 +101,7 @@
       justify-content: space-between;
       cursor: pointer;
       user-select: none;
+
       h6 {
         font-weight: 500;
         font-size: 16px;
@@ -116,6 +119,7 @@
       transition: all .3s ease;
       transform: scaleY(0);
       transform-origin: top left;
+
       &.active {
         height: max-content;
         overflow: visible;
@@ -138,11 +142,90 @@
         }
       }
     }
+
     &-wrapper {
       margin-top: 34px;
+
       &:first-child {
         margin-top: 0;
       }
     }
+  }
+
+  @media (max-width: 1200px) {
+    &__card {
+
+      img {
+        height: 140px;
+      }
+
+      &-body {
+        padding: 12px;
+
+        h5 {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    &__card {
+
+      img {
+        height: 130px;
+      }
+
+      &-body {
+
+        h5 {
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+
+      &-level {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .level {
+          span {
+            width: 4px;
+          }
+        }
+
+        h6 {
+          font-size: 12px;
+        }
+      }
+
+    }
+  }
+  @media (max-width: 768px) {
+    &__grid {
+      grid-template-columns: 150px 1fr;
+      margin-top: 40px;
+    }
+
+  }
+  @media (max-width: 576px) {
+    &__wrapper {
+      padding-top: 35px;
+      padding-bottom: 42px;
+      h3 {
+        font-size: 28px;
+      }
+      h4 {
+        font-size: 14px;
+        margin-top: 15px;
+      }
+    }
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 30px;
+    }
+
   }
 }

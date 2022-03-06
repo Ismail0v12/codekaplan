@@ -5,7 +5,13 @@ import learnHtml from '../../assets/images/learn-html.png';
 
 function PractiseCard() {
   return (
-    <Link to="/" className="practise__card">
+    <Link
+      to="/"
+      className="practise__card"
+      data-aos="zoom-in-down"
+      data-aos-delay="400"
+      data-aos-duration="1000"
+    >
       <img src={learnHtml} alt="CodeKaplan"/>
       <div className="practise__card-body">
         <h5 className="title">Learn HTML</h5>

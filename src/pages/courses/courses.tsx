@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './courses.scss';
 import Breadcumb from "../../components/breadcumb/breadcumb";
 import CoursesContent from "./courses-content";
@@ -6,9 +6,16 @@ import FilterContent from "../../components/filter-content/filter-content";
 
 function Courses() {
   const [filter, setFilter] = useState<string | any>("");
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <section className="courses">
+    <section
+      data-aos="fade-up"
+      data-aos-delay="400"
+      data-aos-duration="1000"
+      className="courses"
+    >
       <Breadcumb title="Courses" link="/courses"/>
       <div className="container">
         <div className="courses__wrapper">

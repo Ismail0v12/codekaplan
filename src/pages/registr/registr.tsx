@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import UserIcon from "../../assets/icons/user-icon";
 import LockIcon from "../../assets/icons/lock-icon";
 import EyeCrossedIcon from "../../assets/icons/eye-crossed-icon";
@@ -6,8 +6,10 @@ import googleIcon from '../../assets/icons/google-icon.png';
 import {Link} from "react-router-dom";
 
 function Registr() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [changeType, setChangeType] = useState(false);
-
   return (
     <div className="register" style={{width: "100%"}}>
       <h4 className="auth-layout__subtitle">Welcome</h4>

@@ -10,10 +10,14 @@ function HomeTestimonals() {
   const arrayStar = new Array(5).fill(<StarIcon/>);
   const testimonalsRating = 5;
   return (
-    <div className="home__testimonals">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+      className="home__testimonals">
       <div className="container">
         <h4 className="title">Our Testimonials</h4>
-        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+        <h6>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</h6>
         <Swiper
           modules={[Pagination, Navigation]}
           pagination={{
@@ -23,10 +27,58 @@ function HomeTestimonals() {
               return '<span class="' + className + '">' + (index + 1) + '</span>';
             }
           }}
+          breakpoints={{
+            "320": {
+              "slidesPerView": 2,
+              "spaceBetween": 15
+            },
+            "768": {
+              "slidesPerView": 2,
+              "spaceBetween": 20
+            },
+            "992": {
+              "slidesPerView": 1,
+              "spaceBetween": 0
+            },
+            "1400": {
+              "slidesPerView": 1,
+              "spaceBetween": 0
+            }
+          }}
           navigation={{
             prevEl: ".testimonals-prev",
             nextEl: ".testimonals-next"
           }}>
+          <SwiperSlide>
+            <div className="home__testimonals-block">
+              <div className="home__testimonals-image">
+                <img src={testimonalImage} alt="codekaplan"/>
+                <div>
+                  <span>Xurshid Istamov</span>
+                  <span>UI/UX Designer</span>
+                </div>
+              </div>
+              <div className="home__testimonals-comments">
+                <div>
+                  {arrayStar.map((item, index) => (
+                    <i
+                      className={index < testimonalsRating ? "active" : ""}
+                      key={index}>
+                      {item}
+                    </i>
+                  ))}
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like
+                  readable English.</p>
+                <div className="home__testimonals-buttons">
+                  <div className="testimonals-prev button"><ArrowLeft/></div>
+                  <div className="testimonals-next button"><ArrowRight/></div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
           <SwiperSlide>
             <div className="home__testimonals-block">
               <div className="home__testimonals-image">

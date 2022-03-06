@@ -9,7 +9,11 @@ import CardBlog from "../../components/card-blog/card-blog";
 
 function HomeBlog() {
   return (
-    <div className="home__carousel">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+      className="home__carousel">
       <div className="container">
         <div className="home__carousel-header">
           <div>

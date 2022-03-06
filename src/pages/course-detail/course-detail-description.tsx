@@ -5,7 +5,7 @@ function CourseDetailDescription() {
   return (
     <div className="course-detail__description">
       <h4 className="title">About the Course</h4>
-      <article className="mb-5">
+      <article className="mb-lg-5 mb-md-3 mb-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo amet habitasse orci convallis sodales augue.
       </article>
       <article>
@@ -20,7 +20,7 @@ function CourseDetailDescription() {
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
       </ul>
-      <article className="mb-5">
+      <article className="mb-lg-5 mb-md-3 mb-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo amet habitasse orci convallis sodales
         augue.
       </article>

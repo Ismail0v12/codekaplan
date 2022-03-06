@@ -8,7 +8,13 @@ import Card from "../../components/card/card";
 
 function HomeCourseCarousel() {
   return (
-    <div className="home__carousel">
+    <div
+      className="home__carousel"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+      data-aos-anchor-placement="center-bottom"
+    >
       <div className="container">
         <div className="home__carousel-header">
           <div>
@@ -21,6 +27,10 @@ function HomeCourseCarousel() {
           modules={[Pagination]}
           loop={true}
           breakpoints={{
+            "100": {
+              "slidesPerView": 2,
+              "spaceBetween": 10
+            },
             "320": {
               "slidesPerView": 2,
               "spaceBetween": 15
