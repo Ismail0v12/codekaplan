@@ -758,12 +758,12 @@
 
         h2 {
           margin-bottom: 10px;
-          font-size: 16px;
+          font-size: 24px;
         }
 
         span {
-          font-size: 10px;
-          line-height: 11px;
+          font-size: 12px;
+          line-height: 14px;
         }
 
       }
@@ -781,8 +781,8 @@
       padding: 30px 0;
 
       h4 {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 24px;
+        line-height: 34px;
       }
 
       &-grid {
@@ -793,13 +793,14 @@
           gap: 5px;
 
           img {
-            width: 36px;
-            height: 36px;
+            width: 45px;
+            height: 45px;
           }
 
           p {
-            font-size: 9px;
-            line-height: 13px;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: initial;
           }
         }
       }
@@ -811,7 +812,7 @@
         gap: 10px;
 
         h4 {
-          font-size: 26px;
+          font-size: 24px;
           margin-bottom: 6px;
         }
 

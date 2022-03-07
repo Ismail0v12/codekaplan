@@ -12,13 +12,13 @@ function HomeAbout() {
         data-aos-duration="1000"
         className="home__about">
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-duration="1500"
           className="home__about-image">
           <img src={unsplash} alt="codekaplan"/>
         </div>
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1500"
           className="home__about-content">
           <div>
